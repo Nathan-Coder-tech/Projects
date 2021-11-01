@@ -1,0 +1,110 @@
+body{
+	font-family: 'PT Sans' Sans-serif;
+	background-color: #252529;
+	margin: 0;
+	color: #888437;
+	line-height:1.6;
+}
+
+a{
+	text-decoration: none;
+	color: #cccccc;
+	transition: 0.3s;
+}
+
+#showcase{
+	margin: 0;
+	padding:0;
+	background: url("pexels-james-wheeler-417074.jpg") no-repeat center/cover;
+	height: 100vh; viewport-height
+	position: relative;
+	overflow-y: hidden;
+}
+
+.multi_clr{
+	background: #833ab4;
+	background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+	background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+}
+
+#showcase .container{
+	margin-top: 25vh;
+}
+
+#showcase h1{
+	font-size: 4rem;
+	margin-bottom:0;
+}
+
+#showcase h2{
+	font-size: 2rem;
+}
+
+nav{
+	height: 40px;
+	width: 100%;
+	background-color: #000064;
+	color: rgb(67,94,216);
+	position: fixed;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+
+nav li{
+	display: inline;
+	float: left;
+}
+
+nav a {
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+nav li:hover{
+	background-color: #0000b9;
+}
+
+.container{
+	max-width: 1180px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0 3rem;
+}
+
+.lead{
+	font-size: 1.3rem;
+}
+
+footer .footer-cols{
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(5,1fr);
+	padding: 2rem;
+	text-align: left;
+	font-size: 14px;
+}
+
+footer .footer-clos ul{
+	list-style: none;
+}
+
+footer .footer-cols ul li:first-child{
+	font-size: 1.2rem;
+	padding-bottom: 0.5rem;
+	border-bottom: #606060 solid 2px;
+	margin-bottom: 1rem;
+}
+
+footer .footer-bottom{
+	background-color: #888437;
+	padding:1rem;
+	text-align: center;
+	color: white;
+	
+}

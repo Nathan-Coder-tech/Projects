@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>3d</title>
+</head>
+<body>
+<style>
+  label{
+    size: 50px;
+  }
+</style>
+<form>
+<center>
+<h2 style="size: 20px">
+<Label for="x">Speed X:</Label>
+<input type="number" placeholder="0 - 50" name="x" id="x" ><br>
+<Label for="y">Speed Y:</Label>
+<input type="number" placeholder="0 - 50" name="y" id="y" ><br>
+<Label for="z">Speed Z:</Label>
+<input type="number" placeholder="0 - 50" name="z" id="z" ><br>
+</h2>
+
+</center>
+</form>
+<br>
+<script src="Three.js"></script>
+<script src="Chrome Fixes.js"></script>
+<script>
+
+  var camera, scene, renderer;
+  var geometry, material, mesh;
+
+  init();
+  animate();
+
+  
+
+  function init() {
+    scene = new THREE.Scene();
+    var aspect = window.innerWidth / window.innerHeight;
+    camera = new THREE.PerspectiveCamera(75, aspect, 10, 1000);
+    camera.position.z = 400;
+    camera.position.y = -25;
+    camera.position.x = 0;
+    scene.add(camera);
+    
+    geometry = new THREE.IcosahedronGeometry(175, 3);
+    material = new THREE.MeshBasicMaterial({
+      color: 0x0d00ff,
+      wireframe: true,
+      wireframeLinewidth: 1
+    });
+
+    mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    renderer = new THREE.CanvasRenderer();
+    renderer.setClearColorHex(0xf2910d);
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    document.body.style.margin = 0;
+    document.body.style.overflow = 'hidden';
+    document.body.appendChild(renderer.domElement);
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    var x = document.getElementById('x').value;
+    var y = document.getElementById('y').value;
+    var z = document.getElementById('z').value;
+    mesh.rotation.x = Date.now() * x/10000;
+    mesh.rotation.y = Date.now() * y/10000;
+    mesh.rotation.z = Date.now() * z/10000;
+
+    renderer.render(scene, camera);
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Website</title>
+	<link rel="icon" type="image/x-icon" href="pics/logo.png">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<style>
+		/* The side navigation menu */
+		.q:hover{
+			color: red;
+		}
+		.sidenav {
+		  height: 60%; /* 100% Full-height */
+		  width: 0; /* 0 width - change this with JavaScript */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Stay on top */
+		  top: 0; /* Stay at the top */
+		  left: 0;
+		  background-color: #111; /* Black*/
+		  overflow-x: hidden; /* Disable horizontal scroll */
+		  padding-top: 60px; /* Place content 60px from the top */
+		  transition: 0.67452s; /* 0.5 second transition effect to slide in the sidenav */
+		}
+
+		/* The navigation menu links */
+		.sidenav a {
+		  padding: 8px 8px 8px 32px;
+		  text-decoration: none;
+		  font-size: 25px;
+		  color: #818181;
+		  display: block;
+		  transition: 0.3s;
+		}
+
+		/* When you mouse over the navigation links, change their color */
+		.sidenav a:hover {
+		  color: #f1f1f1;
+		}
+
+		/* Position and style the close button (top right corner) */
+		.sidenav .closebtn {
+		  position: absolute;
+		  top: 0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left: 50px;
+		}
+
+		/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+		#main {
+		  transition: margin-left 0.5s;
+		  padding: 20px;
+		}
+
+		/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;}
+		  .sidenav a {font-size: 18px;}
+		}
+	</style>
+	<script>
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "250px";
+		  document.getElementById("main").style.marginLeft = "250px";
+		}
+
+		/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginLeft = "0";
+		}
+	</script>
+
+	<div id="mySidenav" class="sidenav">
+    	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a style="transition: 0.3s;" href="index.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="listing.html">Listing</a>
+        <a href="contact Us.html">Contact Us</a>
+    </div>
+
+<div id="showcase">
+	<header>
+		<nav class="cf">
+			<ul class="cf">
+				<li>
+					<a style="background: linear-gradient(to right, #ffff00, #fcb045, #fd1d1d, #833ab4, #00ff40);" onclick="openNav()" href="#showcase">Our Website </a>
+				</li>
+				<li>
+					<a href="html/About Us.html">About Us</a>
+				</li>
+				<li>
+					<a href="#services">Services</a>
+				</li>
+				<li>
+					<a href="#indoor">Indoor</a>
+				</li>
+				<li>
+					<a href="#outdoor">Outdoor</a>
+				</li>
+				<li>
+					<a href="#history">History</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div style="color: #48ed2c; text-align: center;" class="section-main container">
+		<h1 style="color: pink; font-size: 100px">My Website</h1>
+		<h2>Made by the Adeyemi Nathan</h2>
+		<p class="lead hide-on-small">My website is the first one I have made after finishing my learning in HTML and CSS only. That is what I used to make this website out of.</p>
+	</div>
+</div>
+<section id="services" class="section">
+	<div class="container">
+		<center><h2>Services</h2>
+		<h3>Learn With us</h3></center>
+	</div>
+</section>
+<footer style="text-align: center;">
+	<div class="container">
+		<div class="footer-cols">
+			<ul>
+				<li>Shop & Play</li>
+				<li>
+					<a href="#">3d Sport</a>
+				</li>
+				<li>
+					<a href="#">Arcade Sport</a>
+				</li>
+				<li>
+					<a href="#">Gift Cards</a>
+				</li>
+				<li>
+					<a href="#">Virtual Reality</a>
+				</li>
+				<li>
+					<a href="#">Augumented Reality</a>
+				</li>
+			</ul>
+			<ul>
+				<li>Store</li>
+				<li>
+					<a href="#">Camera</a>
+				</li>
+				<li>
+					<a href="#">Food</a>
+				</li>
+				<li>
+					<a href="#">Augumented Reality Glasses</a>
+				</li>
+				<li>
+					<a href="#">AI</a>
+				</li>
+				<li>
+					<a href="#">Gift Cards</a>
+				</li>
+			</ul>
+			<ul>
+				<li>Education</li>
+				<li>
+					<a href="#">Html</a>
+				</li>
+				<li>
+					<a href="#">Css</a>
+				</li>
+				<li>
+					<a href="#">Java</a>
+				</li>
+				<li>
+					<a href="#">Python</a>
+				</li>
+				<li>
+					<a href="#">Certificate</a>
+				</li>
+			</ul>
+			<ul>
+				<li>Business</li>
+				<li>
+					<a href="#">CCNA 1-3</a>
+				</li>
+				<li>
+					<a href="#">CCNP</a>
+				</li>
+				<li>
+					<a href="#">Complex Networking</a>
+				</li>
+				<li>
+					<a href="#">AWS</a>
+				</li>
+				<li>
+					<a href="#">Mikro-Tik</a>
+				</li>
+			</ul>
+			<ul>
+				<li>About</li>
+				<li>
+					<a href="#">Mail</a>
+				</li>
+				<li>
+					<a href="#">Phone</a>
+				</li>
+				<li>
+					<a href="#">Fax</a>
+				</li>
+				<li>
+					<a href="#">Social Media</a>
+				</li>
+				<li>
+					<a href="#">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="footer-bottom">
+	Copyright &copy; 2021 Nathan	
+	</div>
+</footer>
+</body>
+</html>
